@@ -1,3 +1,4 @@
 Is git working?
 	Yes it is!
-	Heso?
+	No, wait...
+	Yes now it works!
