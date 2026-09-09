@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\fokr25ww\\OneDrive - Jonkoping University\\Object Oriented\\Assignment 1\\Calculator\\Calculator\\Calculator.csproj": {}
+    "G:\\Programmering\\OOP-Assignment1\\Calculator\\Calculator.csproj": {}
   },
   "projects": {
-    "C:\\Users\\fokr25ww\\OneDrive - Jonkoping University\\Object Oriented\\Assignment 1\\Calculator\\Calculator\\Calculator.csproj": {
+    "G:\\Programmering\\OOP-Assignment1\\Calculator\\Calculator.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\fokr25ww\\OneDrive - Jonkoping University\\Object Oriented\\Assignment 1\\Calculator\\Calculator\\Calculator.csproj",
+        "projectUniqueName": "G:\\Programmering\\OOP-Assignment1\\Calculator\\Calculator.csproj",
         "projectName": "Calculator",
-        "projectPath": "C:\\Users\\fokr25ww\\OneDrive - Jonkoping University\\Object Oriented\\Assignment 1\\Calculator\\Calculator\\Calculator.csproj",
+        "projectPath": "G:\\Programmering\\OOP-Assignment1\\Calculator\\Calculator.csproj",
         "packagesPath": "C:\\Users\\fokr25ww\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\fokr25ww\\OneDrive - Jonkoping University\\Object Oriented\\Assignment 1\\Calculator\\Calculator\\obj\\",
+        "outputPath": "G:\\Programmering\\OOP-Assignment1\\Calculator\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
