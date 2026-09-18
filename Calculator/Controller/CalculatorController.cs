@@ -1,9 +1,12 @@
 namespace Calculator.Controller;
 
 public class CalculatorController
-// Model: classes associated with the domain (logic and data),
-// which in this case is the actual calculator with its tokens,
-// stack, calculations, etc.
+// Namespace Calculator.Controller should contain a class CalculatorController that
+// drives the actual application. Furthermore, this class ensures that the model-classes
+// are separated from the view-classes, i.e. no model-class should know about (have an
+// association to) any view-class, and no view-class should know about (have an association
+// to) a model-class. Only the CalculatorController class should know about model-
+// classes and view-classes.
 {
    public void Run(string[] args)
    {

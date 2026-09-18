@@ -1,8 +1,9 @@
 namespace Calculator.Model;
 
 public class CalculatorModel
-// Controller: classes that drive the application, control specific use cases, and that separate
-// the Model classes from the View classes.
+// Namespace Calculator.Model should contain all C# classes associated with the domain,
+// i.e. that have to do with the calculator’s logic and data (calculations, tokens, the stack,
+// etc.).
 {
     
 }
