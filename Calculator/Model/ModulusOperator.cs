@@ -1,7 +1,23 @@
+using DivideByZeroException = Calculator.Exceptions.DivideByZeroException;
 namespace Calculator.Model;
 
 public class ModulusOperator : Operator
 {
     public override string ToString() => "%";
-    public override double evaluate(double left, double right) => left % right;
+    protected override double? Calculate(double? left, double? right)
+    {
+        try
+        {
+            if (right == 0)
+            {
+                throw new DivideByZeroException(left, "%");
+            }
+            return left % right;
+        }
+        catch (DivideByZeroException e)
+        {
+            Console.WriteLine(e.Message);
+        }
+        return null;
+    }
 }
