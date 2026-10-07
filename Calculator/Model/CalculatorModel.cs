@@ -1,5 +1,5 @@
+// 2026 Kristoffer Forsberg
 using Calculator.Exceptions;
-using DivideByZeroException =  Calculator.Exceptions.DivideByZeroException;
 using InvalidOperationException = Calculator.Exceptions.InvalidOperationException;
 
 namespace Calculator.Model;
@@ -15,7 +15,13 @@ public class CalculatorModel
         _stack = stack;
     }
 
-    // Takes a string line and converts to individual operators/operands and pushes each one to the stack
+    /// <summary>
+    /// Evaluates a string using RPN (Reverse Polish Notation) and returns the result.
+    /// </summary>
+    /// <param name="input"> A space-separated string of symbols, either doubles or one of the basic mathematical operators. </param>
+    /// <returns> The result of the mathematical evaluation. </returns>
+    /// <exception cref="InvalidTokenException"> When a token does not belong to one of the above groups. </exception>
+    /// <exception cref="InvalidOperationException"> When the proper order of operations is not followed. </exception>
     public double Evaluate(string input)
     {
         string[] symbols = input.Split(" ");
@@ -59,13 +65,10 @@ public class CalculatorModel
         Token token = _stack.Pop();
         double result = token.Evaluate(_stack);
 
-        if (_stack.Count == 0)
-        {
-            return result;
-        }
-        else
+        if (_stack.Count != 0)
         {
             throw new InvalidOperationException();
         }
+        return result;
     }
 }

@@ -1,5 +1,3 @@
 <Solution>
   <Project Path="Calculator/Calculator.csproj" />
-  <Project Path="Minitest/Minitest.csproj" />
-  <Project Path="Tests/Tests.csproj" />
 </Solution>

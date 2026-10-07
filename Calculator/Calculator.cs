@@ -1,4 +1,5 @@
-﻿using Calculator.Controller;
+﻿// 2026 Kristoffer Forsberg, Fadi Khalil, Chamel Kraidie
+using Calculator.Controller;
 
 namespace Calculator
 // Namespace Calculator should contain the application class Calculator (which was

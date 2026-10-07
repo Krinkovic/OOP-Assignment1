@@ -18,6 +18,7 @@ public class CalculatorController
    // Pass the result to the View. The View presents the results on the screen for the user.
    public void Run()
    {
+      // TODO: Remove this section before shipping
       // Code for testing
       CalculatorModel model = new CalculatorModel(_stack);
       double result = model.Evaluate("3 4 + 5 6 + * 3");

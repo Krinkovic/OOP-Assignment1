@@ -1,5 +1,9 @@
+// 2026 Kristoffer Forsberg
 namespace Calculator.Model;
 
+/// <summary>
+/// A stack for RPN tokens.
+/// </summary>
 public class TokenStack : ITokenStack
 {
     private readonly Stack<Token> _stack = new Stack<Token>();
