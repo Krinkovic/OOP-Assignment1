@@ -1,13 +1,8 @@
 namespace Calculator.Exceptions;
 
-public class DivideByZeroException : Exception
+public class DivideByZeroException(double dividend, string operatorSymbol)
+   : Exception($"Division by zero: {dividend}{operatorSymbol}0.00")
 {
-   public double?  Dividend { get; }
-   public string OperatorSymbol { get; }
-
-   public DivideByZeroException(double? dividend, string operatorSymbol) : base($"Division by zero: {dividend} {operatorSymbol} 0")
-   {
-      Dividend = dividend;
-      OperatorSymbol = operatorSymbol;
-   }
+   private double  Dividend { get; } = dividend;
+   private string OperatorSymbol { get; } = operatorSymbol;
 }

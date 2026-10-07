@@ -12,7 +12,7 @@ namespace Calculator
             var controller = new CalculatorController();
             if (args.Length == 0)
             {
-                controller.Run([]);
+                controller.Run();
             }
             else if (args.Length == 2)
             // This should take all the arguments from an external file

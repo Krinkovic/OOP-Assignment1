@@ -5,20 +5,12 @@ public class DivideOperator : Operator
 {
     public override string ToString() => "/";
 
-    protected override double? Calculate(double? left, double? right)
+    protected override double Calculate(double left, double right)
     {
-        try
+        if (right == 0)
         {
-            if (right == 0)
-            {
-                throw new DivideByZeroException(left, "/");
-            }
-            return left / right;
+            throw new DivideByZeroException(left, "/");
         }
-        catch (DivideByZeroException e)
-        {
-            Console.WriteLine(e.Message);
-        }
-        return null;
+        return left / right;
     }
 }
