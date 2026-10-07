@@ -8,7 +8,6 @@ namespace Calculator
     {
         static void Main(string[] args)
         {
-            Environment.Exit(0);
             var controller = new CalculatorController();
             if (args.Length == 0)
             {

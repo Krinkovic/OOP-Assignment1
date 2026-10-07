@@ -1,3 +1,6 @@
+using Calculator.Model;
+using Calculator.View;
+
 namespace Calculator.Controller;
 
 public class CalculatorController
@@ -8,12 +11,19 @@ public class CalculatorController
 // to) a model-class. Only the CalculatorController class should know about model-classes
 // and view-classes.
 {
+   private ITokenStack _stack = new TokenStack();
    // This runs when no startup arguments are passed. Then we need to get input from the user.
    // Call the View to get user input. Send that input to the Model.
    // The Model calculates the result and returns it here.
    // Pass the result to the View. The View presents the results on the screen for the user.
    public void Run()
    {
+      // Code for testing
+      CalculatorModel model = new CalculatorModel(_stack);
+      double result = model.Evaluate("3 4 + 5 6 + * 3");
+      Console.WriteLine($"Result: {result}");
+      Environment.Exit(0);
+      // Testing code done
       throw new NotImplementedException();
    }
    
