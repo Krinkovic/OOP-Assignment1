@@ -1,7 +1,7 @@
 // 2026 Kristoffer Forsberg
 namespace Calculator.Exceptions;
 
-public class DivideByZeroException(double dividend, string operatorSymbol)
+public class MyDivideByZeroException(double dividend, string operatorSymbol)
    : Exception($"Division by zero: {dividend:F2}{operatorSymbol}0.00")
 {
    private double  Dividend { get; } = dividend;

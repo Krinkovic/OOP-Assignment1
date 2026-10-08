@@ -1,6 +1,5 @@
 // 2026 Kristoffer Forsberg
 using Calculator.Exceptions;
-using InvalidOperationException = Calculator.Exceptions.InvalidOperationException;
 
 namespace Calculator.Model;
 
@@ -20,8 +19,8 @@ public class CalculatorModel
     /// </summary>
     /// <param name="input"> A space-separated string of symbols, either doubles or one of the basic mathematical operators. </param>
     /// <returns> The result of the mathematical evaluation. </returns>
-    /// <exception cref="InvalidTokenException"> When a token does not belong to one of the above groups. </exception>
-    /// <exception cref="InvalidOperationException"> When the proper order of operations is not followed. </exception>
+    /// <exception cref="MyInvalidTokenException"> When a token does not belong to one of the above groups. </exception>
+    /// <exception cref="MyInvalidOperationException"> When the proper order of operations is not followed. </exception>
     public double Evaluate(string input)
     {
         string[] symbols = input.Split(" ");
@@ -53,7 +52,7 @@ public class CalculatorModel
                     }
                     catch (FormatException)
                     {
-                        throw new InvalidTokenException(symbol);
+                        throw new MyInvalidTokenException(symbol);
                     }
                     
                     _stack.Push(new Operand(operand));
@@ -67,7 +66,7 @@ public class CalculatorModel
 
         if (_stack.Count != 0)
         {
-            throw new InvalidOperationException();
+            throw new MyInvalidOperationException();
         }
         return result;
     }

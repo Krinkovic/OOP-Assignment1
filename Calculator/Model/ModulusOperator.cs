@@ -1,5 +1,7 @@
 // 2026 Kristoffer Forsberg
-using DivideByZeroException = Calculator.Exceptions.DivideByZeroException;
+
+using Calculator.Exceptions;
+
 namespace Calculator.Model;
 
 /// <summary>
@@ -15,12 +17,12 @@ public class ModulusOperator : Operator
     /// <param name="left"> The numerator. </param>
     /// <param name="right"> The denominator. </param>
     /// <returns> The remainder of dividing left with right. </returns>
-    /// <exception cref="DivideByZeroException"> If the denominator is 0. </exception>
+    /// <exception cref="MyDivideByZeroException"> If the denominator is 0. </exception>
     protected override double Calculate(double left, double right)
     {
         if (right == 0)
         {
-            throw new DivideByZeroException(left, "%");
+            throw new MyDivideByZeroException(left, "%");
         }
         return left % right;
     }
