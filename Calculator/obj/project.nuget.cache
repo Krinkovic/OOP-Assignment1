@@ -1,10 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "9vJf70DKKBo=",
+  "dgSpecHash": "TOR468wpDGQ=",
   "success": true,
-  "projectFilePath": "/home/kristofferf/School/Programming/5.2 Object-Oriented Programming/Assignments/Assignment 1/Calculator/Calculator/Calculator.csproj",
-  "expectedPackageFiles": [
-    "/home/kristofferf/.nuget/packages/microsoft.aspnetcore.app.ref/10.0.12/microsoft.aspnetcore.app.ref.10.0.12.nupkg.sha512"
-  ],
+  "projectFilePath": "C:\\Users\\Shamel\\Desktop\\Uni\\C#\\OOP-Assignment1\\Calculator\\Calculator.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }

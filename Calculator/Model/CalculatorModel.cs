@@ -1,5 +1,6 @@
 // 2026 Kristoffer Forsberg
 using Calculator.Exceptions;
+using System.Globalization;
 
 namespace Calculator.Model;
 
@@ -48,7 +49,7 @@ public class CalculatorModel
                     double operand;
                     try
                     {
-                        operand = double.Parse(symbol);
+                        operand = double.Parse(symbol, CultureInfo.InvariantCulture);
                     }
                     catch (FormatException)
                     {
